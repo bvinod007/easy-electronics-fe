@@ -1,5 +1,5 @@
 <h1>Login Form</h1>
-<form (submit)="login()">
+<form (submit)="login()" >
     <div>
       <label for="email">Email</label>
       <input type="email" id="email" name="email" [(ngModel)]="email">
@@ -8,5 +8,5 @@
       <label for="password">Password</label>
       <input type="password" id="password" name="password" [(ngModel)]="password">
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" (click)="login()">Submit</button>
   </form>

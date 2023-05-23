@@ -18,12 +18,11 @@ export class SignUpServices {
   // Example: POST request
   createUser(user: any): Observable<any> {
     console.log(user)
-    return this.http.post<any>(`${this.baseUrl}/api/user/register`, user);
+    return this.http.post<any>(`${this.baseUrl}/api/user/register/`, user);
   }
 
   // Other methods for PUT, DELETE requests, etc.
   loginUser(user: any): Observable<any> {
-    console.log(user)
     return this.http.post<any>(`${this.baseUrl}/api/user/login/`, user)
   }
 }
